@@ -201,10 +201,19 @@
         }
 
         /*
-        input: "ABDF"
+        input: "LBDV"
         output: 10
-        Spec: Take a four letter string "ABDF" and give us the number 10
+        Spec: Take a four letter string "LBDV" and give us the number 10
         */
+        function test_getScore_fourLetterScoreTen()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'LBDV';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(10, $result);
+        }
 
         /*
         input: "KFBDA"
