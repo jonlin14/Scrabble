@@ -82,9 +82,18 @@
 
         /*
         input: "AB" (string)
-        output: 1 (number)
+        output: 4 (number)
         Spec: Take a two letter string of "AB" and return number 4
         */
+        function test_getScore_twoLetterScoreFour()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'AB';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(4, $result);
+        }
 
         /*
         input: "BD" (string)
