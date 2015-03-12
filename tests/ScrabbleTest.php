@@ -264,6 +264,15 @@
         output: 33
         Spec: Take letter with scores of 10, 8, 5, 4, 3, 2, 1 but entered in reverse and output the number 33
         */
+        function test_getScore_sevenLetterScoreThirtyThreeReverse()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'ZJKFBDT';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(33, $result);
+        }
 
         /*
         input: "aDbFkJQ"
