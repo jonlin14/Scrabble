@@ -175,6 +175,15 @@
         output: 8
         Spec: Take a single letter "J" as a string, and give us the number 8
         */
+        function test_getScore_oneLetterScoreEight()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'J';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(8, $result);
+        }
 
         /*
         input: "Q"
