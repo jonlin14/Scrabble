@@ -4,7 +4,7 @@
     {
         function getScore($word)
         {
-            $scoreKeeper = ['A', 'E' => 1];
+            $scoreKeeper = ['A' => 1, 'E' => 1];
             $word_letters = str_split($word);
             $score_total = 0;
             foreach ($word_letters as $letter) {
