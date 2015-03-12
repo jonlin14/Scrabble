@@ -11,6 +11,7 @@
                 'F' => 4, 'H' => 4,
                 'K' => 5,
                 'J' => 8,
+                'Q' => 10,
             ];
             $word_letters = str_split($word);
             $score_total = 0;
