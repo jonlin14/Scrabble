@@ -303,6 +303,21 @@
 
             $this->assertEquals(174, $result);
         }
+
+        /*
+        input: "11cat.!"
+        output: -1
+        Spec: Take take all cases of letters and output 174
+        */
+        function test_getScore_invalidNumbers()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = '11cat.!';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(-1, $result);
+        }
     }
 
 
