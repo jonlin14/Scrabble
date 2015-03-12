@@ -111,10 +111,19 @@
         }
 
         /*
-        input: "ADB" (string)
+        input: "ODP" (string)
         output: 6 (number)
         Spec: Take a three letter string of "ADB" and return the number 6
         */
+        function test_getScore_threeLetterScoreSix()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'ODP';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(6, $result);
+        }
 
         /*
         input: "F" (string)
