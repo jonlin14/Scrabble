@@ -1,7 +1,18 @@
 <?php
+    require_once "src/Scrabble.php";
 
     class ScrabbleTest extends PHPUnit_Framework_TestCase
     {
+        function test_getScore_oneLetter()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'A';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals($result, 1);
+
+        }
         /*
         input: "A" (string)
         output: 1 (number)
