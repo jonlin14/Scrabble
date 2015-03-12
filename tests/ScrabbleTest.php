@@ -50,10 +50,19 @@
         }
 
         /*
-        input: "AD" (str)
+        input: "IG" (str)
         output: 3 (num)
-        Spec: Take a two letter string "AD" of different scores and give us the number 3
+        Spec: Take a two letter string "IG" of different scores and give us the number 3
         */
+        function test_getScore_twoLetterScoreOneTwo()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'IG';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals($result, 3);
+        }
 
         /*
         input: "B" (string)
