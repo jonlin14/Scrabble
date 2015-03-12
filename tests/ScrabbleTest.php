@@ -160,6 +160,15 @@
         output: 5
         Spec: Take a single letter string "K" and give us the number 5
         */
+        function test_getScore_oneLetterScoreFive()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'K';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(5, $result);
+        }
 
         /*
         input: "J"
