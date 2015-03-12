@@ -231,10 +231,19 @@
         }
 
         /*
-        input: "JKFBDA"
+        input: "XKYBDR"
         output: 23
         Spec: Take letters with scores of 8, 5, 4, 3, 2, 1 and output the number 23
         */
+        function test_getScore_fiveLetterScoreTwentyThree()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'XKYBDR';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(23, $result);
+        }
 
         /*
         input: "QJKFBDA"
