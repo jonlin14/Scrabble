@@ -39,6 +39,15 @@
         output: 2 (number)
         Spec: Take a single letter "D" with a value of 2 and output the number 2
         */
+        function test_getScore_oneLetterScoreTwo()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'D';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals($result, 2);
+        }
 
         /*
         input: "AD" (str)
