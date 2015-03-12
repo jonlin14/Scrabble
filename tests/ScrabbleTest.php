@@ -130,6 +130,15 @@
         output: 4 (number)
         Spec: Take a single letter "F" and give us the number 4
         */
+        function test_getScore_oneLetterScoreFour()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'F';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals( 4, $result);
+        }
 
         /*
         input: "FA"
