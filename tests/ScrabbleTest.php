@@ -216,10 +216,19 @@
         }
 
         /*
-        input: "KFBDA"
+        input: "KWBDN"
         output: 15
-        Spec: Take a five letter string "KFBDA" and give us the number 15
+        Spec: Take a five letter string "KWBDN" and give us the number 15
         */
+        function test_getScore_fiveLetterScoreFifteen()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'KWBDN';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(15, $result);
+        }
 
         /*
         input: "JKFBDA"
