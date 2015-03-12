@@ -3,6 +3,11 @@
 
     class ScrabbleTest extends PHPUnit_Framework_TestCase
     {
+        /*
+        input: "A" (string)
+        output: 1 (number)
+        Spec: Take a single letter "A" as a string and output the number 1
+        */
         function test_getScore_oneLetter()
         {
             $test_Scrabble = new Scrabble();
@@ -13,17 +18,21 @@
             $this->assertEquals($result, 1);
 
         }
-        /*
-        input: "A" (string)
-        output: 1 (number)
-        Spec: Take a single letter "A" as a string and output the number 1
-        */
 
         /*
         input: "AE" (string)
         output: 2 (number)
         Spec: Take a two letters with the value of 1 in a string "AE" and output the number 2
         */
+        function test_getScore_twoLetterSameScore()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'AE';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals($result, 2);
+        }
 
         /*
         input: "D" (string)
