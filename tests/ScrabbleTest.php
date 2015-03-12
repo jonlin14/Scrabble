@@ -11,13 +11,13 @@
         /*
         input: "AE" (string)
         output: 2 (number)
-        Spec: Take a two letter string "AE" and output the number 2
+        Spec: Take a two letters with the value of 1 in a string "AE" and output the number 2
         */
 
         /*
         input: "D" (string)
         output: 2 (number)
-        Spec: Take a single letter "D" and output the number 2
+        Spec: Take a single letter "D" with a value of 2 and output the number 2
         */
 
         /*
@@ -78,6 +78,42 @@
         input: "Q"
         output: 10
         Spec: Take a single letter "Q" as a string, and give us the number 10
+        */
+
+        /*
+        input: "ABDF"
+        output: 10
+        Spec: Take a four letter string "ABDF" and give us the number 10
+        */
+
+        /*
+        input: "KFBDA"
+        output: 15
+        Spec: Take a five letter string "KFBDA" and give us the number 15
+        */
+
+        /*
+        input: "JKFBDA"
+        output: 23
+        Spec: Take letters with scores of 8, 5, 4, 3, 2, 1 and output the number 23
+        */
+
+        /*
+        input: "QJKFBDA"
+        output: 33
+        Spec: Take letters with scores of 10, 8, 5, 4, 3, 2, 1 and output the number 33
+        */
+
+        /*
+        input: "ADBFKJQ"
+        output: 33
+        Spec: Take letter with scores of 10, 8, 5, 4, 3, 2, 1 but entered in reverse and output the number 33
+        */
+
+        /*
+        input: "aDbFkJQ"
+        output: 33
+        Spec: Take case insensitive letters with scores of 10, 8, 5, 4, 3, 2, 1 and output 33
         */
     }
 
