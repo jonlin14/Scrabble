@@ -100,7 +100,7 @@
         output: 5 (number)
         Spec: Take a two letter string of "MG" and return the number 5
         */
-        function test_getScore_twoLetterScoreFive()
+        function test_getScore_twoLetterScoreFive1()
         {
             $test_Scrabble = new Scrabble();
             $input = 'MG';
@@ -141,10 +141,19 @@
         }
 
         /*
-        input: "FA"
+        input: "UH"
         output: 5
-        Spec: Take a two letter string "FA" and give us the number 5
+        Spec: Take a two letter string "UH" and give us the number 5
         */
+        function test_getScore_twoLetterScoreFive()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'UH';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(5, $result);
+        }
 
         /*
         input: "K"
