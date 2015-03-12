@@ -288,6 +288,21 @@
 
             $this->assertEquals(33, $result);
         }
+
+        /*
+        input: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        output: 174
+        Spec: Take take all cases of letters and output 174
+        */
+        function test_getScore_allLetters()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(174, $result);
+        }
     }
 
 
