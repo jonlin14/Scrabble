@@ -15,7 +15,7 @@
 
             $result = $test_Scrabble->getScore($input);
 
-            $this->assertEquals($result, 1);
+            $this->assertEquals(1, $result);
 
         }
 
@@ -31,7 +31,7 @@
 
             $result = $test_Scrabble->getScore($input);
 
-            $this->assertEquals($result, 2);
+            $this->assertEquals(2, $result);
         }
 
         /*
@@ -46,7 +46,7 @@
 
             $result = $test_Scrabble->getScore($input);
 
-            $this->assertEquals($result, 2);
+            $this->assertEquals(2, $result);
         }
 
         /*
@@ -61,7 +61,7 @@
 
             $result = $test_Scrabble->getScore($input);
 
-            $this->assertEquals($result, 3);
+            $this->assertEquals(3, $result);
         }
 
         /*
@@ -76,7 +76,7 @@
 
             $result = $test_Scrabble->getScore($input);
 
-            $this->assertEquals($result, 3);
+            $this->assertEquals(3, $result);
         }
 
 
