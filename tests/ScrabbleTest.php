@@ -69,6 +69,16 @@
         output: 3 (num)
         Spec: Take a one letter string "B" and output the number 3
         */
+        function test_getScore_oneLetterScoreThree()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'B';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals($result, 3);
+        }
+
 
         /*
         input: "AB" (string)
