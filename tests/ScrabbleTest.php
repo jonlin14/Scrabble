@@ -190,6 +190,15 @@
         output: 10
         Spec: Take a single letter "Q" as a string, and give us the number 10
         */
+        function test_getScore_oneLetterScore10()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'Q';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(10, $result);
+        }
 
         /*
         input: "ABDF"
