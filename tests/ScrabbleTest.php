@@ -81,14 +81,14 @@
 
 
         /*
-        input: "AB" (string)
+        input: "EC" (string)
         output: 4 (number)
-        Spec: Take a two letter string of "AB" and return number 4
+        Spec: Take a two letter string of "EC" and return number 4
         */
         function test_getScore_twoLetterScoreFour()
         {
             $test_Scrabble = new Scrabble();
-            $input = 'AB';
+            $input = 'EC';
 
             $result = $test_Scrabble->getScore($input);
 
