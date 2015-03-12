@@ -39,14 +39,45 @@
         */
 
         /*
+        input: "BD" (string)
+        output: 5 (number)
+        Spec: Take a two letter string of "BD" and return the number 5
+        */
+
+        /*
         input: "ADB" (string)
         output: 6 (number)
         Spec: Take a three letter string of "ADB" and return the number 6
         */
 
         /*
-        input:
-        output:
+        input: "F" (string)
+        output: 4 (number)
+        Spec: Take a single letter "F" and give us the number 4
+        */
+
+        /*
+        input: "FA"
+        output: 5
+        Spec: Take a two letter string "FA" and give us the number 5
+        */
+
+        /*
+        input: "K"
+        output: 5
+        Spec: Take a single letter string "K" and give us the number 5
+        */
+
+        /*
+        input: "J"
+        output: 8
+        Spec: Take a single letter "J" as a string, and give us the number 8
+        */
+
+        /*
+        input: "Q"
+        output: 10
+        Spec: Take a single letter "Q" as a string, and give us the number 10
         */
     }
 
