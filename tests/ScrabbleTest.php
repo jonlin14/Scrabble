@@ -96,10 +96,19 @@
         }
 
         /*
-        input: "BD" (string)
+        input: "MG" (string)
         output: 5 (number)
-        Spec: Take a two letter string of "BD" and return the number 5
+        Spec: Take a two letter string of "MG" and return the number 5
         */
+        function test_getScore_twoLetterScoreFive()
+        {
+            $test_Scrabble = new Scrabble();
+            $input = 'MG';
+
+            $result = $test_Scrabble->getScore($input);
+
+            $this->assertEquals(5, $result);
+        }
 
         /*
         input: "ADB" (string)
